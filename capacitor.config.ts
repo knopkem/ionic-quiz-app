@@ -2,9 +2,11 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'ionic-react-quiz-app',
-  webDir: 'build',
-  bundledWebRuntime: false
+  appName: 'reactApp',
+  webDir: 'dist',
+  server: {
+    androidScheme: 'https'
+  }
 };
 
 export default config;
